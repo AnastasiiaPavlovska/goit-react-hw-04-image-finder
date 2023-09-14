@@ -8,6 +8,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <ToastContainer
+      position={'top-right'}
+      autoClose={3000}
+      hideProgressBar={false}
+      closeOnClick={true}
+      pauseOnHover={true}
+      draggable={true}
+      progress={undefined}
+      theme={'light'}
+    />
   </React.StrictMode>
 );
 
