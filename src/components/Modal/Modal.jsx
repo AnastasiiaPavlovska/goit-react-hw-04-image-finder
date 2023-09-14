@@ -33,5 +33,5 @@ export default class Modal extends Component {
 Modal.propTypes = {
     closeModal: PropTypes.func,
     currentImg: PropTypes.string,
-    currentImg: PropTypes.string,
+    currentAlt: PropTypes.string,
 };
