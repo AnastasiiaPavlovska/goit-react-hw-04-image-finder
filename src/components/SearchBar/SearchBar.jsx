@@ -9,25 +9,25 @@ import {
 import PropTypes from 'prop-types';
 
 export const Searchbar = ({ onSubmit }) => {
-    return (
-        <StyledHeader>
-            <StyledSearchForm onSubmit={onSubmit}>
-                <StyledBtn type='submit'>
-                    <StyledSpan>Search</StyledSpan>
-                </StyledBtn>
+  return (
+    <StyledHeader>
+      <StyledSearchForm onSubmit={onSubmit}>
+        <StyledBtn type="submit">
+          <StyledSpan>Search</StyledSpan>
+        </StyledBtn>
 
-                <StyledInput
-                    name='search'
-                    type='text'
-                    autoComplete='off'
-                    autoFocus
-                    placeholder='Search images and photos'
-                />
-            </StyledSearchForm>
-        </StyledHeader>
-    );
+        <StyledInput
+          name="search"
+          type="text"
+          autoComplete="off"
+          autoFocus
+          placeholder="Search images and photos"
+        />
+      </StyledSearchForm>
+    </StyledHeader>
+  );
 };
 
 Searchbar.propTypes = {
-    onSubmit: PropTypes.func,
+  onSubmit: PropTypes.func,
 };
