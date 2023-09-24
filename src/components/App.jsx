@@ -31,14 +31,12 @@ export const App = () => {
   useEffect(() => {
     async function getImages() {
       const { hits, totalHits } = await FetchImages(page, query);
-
       if (!totalHits) {
         toast.error(
           `We can't find any images by ${query}, enter properly name`
         );
         return;
       }
-
       if (page === 1) {
         setTotal(totalHits);
         toast.success(
